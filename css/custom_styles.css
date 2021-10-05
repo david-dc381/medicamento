@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Menu hamburguesa */
+.menu-hamburguesa {
+  position: fixed !important;
+}
+
+/* Se cambio las dimensiones de  el slider */
+#slide1 {
+  max-height: 543px !important;
+}
+/* Se cambio desde los estilos preeestablecidos */
+.fullwidthbanner-container {
+	max-height: 543px !important;
+}
+
+/* Se quita el padding-bottom de el footer */
+#content-wrapper {
+  padding-bottom: 0;
+}
+
+
+/* Botones 'Ver más' del Slider */
+.slider_ver-mas {
+  margin-top: 10px;
+}
+
+/* Container de Medicamentos */
+.medicamentos {
+  margin: 0rem auto 7rem auto;
+}
+.container_medicamento {
+  margin-bottom: 5rem;
+  padding-top: 6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-medicamento {
+  width: 500px;
+}
+
+.container_medicamento--descripcion {
+  width: 46%;
+  margin: auto;
+}
+/* Fin Container de Medicamentos */
+
+
+/* Media Queries */
+@media all and (max-width: 991px) {
+  /* Container Medicamentos */
+  .img-medicamento {
+    width: 100%;
+  }
+  .container_medicamento--descripcion {
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .container_medicamento:nth-child(2) .container_medicamento--descripcion {
+    order: 2;
+  }
+
+  .container_medicamento:nth-child(2) .container_medicamento--img {
+    order: 1;
+  }
+  /* Fin Container Medicamentos */
+}
+
+@media all and (max-width: 765px) {
+  .slider_ver-mas {
+    margin-top: 2rem;
+  }
+}
+
+/* Fin Media Queries */
