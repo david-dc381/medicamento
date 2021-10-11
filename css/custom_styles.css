@@ -7,24 +7,31 @@ html {
   position: fixed !important;
 }
 
-/* Se cambio las dimensiones de  el slider */
-#slide1 {
-  max-height: 543px !important;
-}
-/* Se cambio desde los estilos preeestablecidos */
+/* Se cambio desde los estilos preeestablecidos, para el tamaño de los sliders */
 .fullwidthbanner-container {
 	max-height: 543px !important;
 }
 
 /* Se quita el padding-bottom de el footer */
 #content-wrapper {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
+}
+#footer {
+  padding: 35px 0 0 0;
 }
 
 
 /* Botones 'Ver más' del Slider */
 .slider_ver-mas {
   margin-top: 10px;
+}
+.slider_ver-mas-primero {
+  margin-top: 35px;
+}
+
+/* Container general que esta en el centro */
+.container-consejo, .container-contacto {
+  padding-bottom: 2em !important;
 }
 
 /* Container de Medicamentos */
@@ -47,6 +54,54 @@ html {
   margin: auto;
 }
 /* Fin Container de Medicamentos */
+
+
+/* Lista de iconos de redes sociales */
+.lista-iconos {
+  display: inline;
+  float: left;
+  margin: 0 2rem;
+}
+/* cambiamos el roden de los botones de las redes sociales, con el boton comprar */
+.donde-comprar {
+  float: left !important;
+}
+/* background de instagram */
+.instagram:hover {
+  background: linear-gradient(119deg, rgba(81, 91, 212) 0%, rgba(129,52,175) 25%, rgba(221,42,123) 58%, rgba(245,133,41) 100%)
+}
+
+/* cambiamos el color de comprar */
+.button {
+  background-color: #3f8cd3 !important;
+  color: #fff !important;
+}
+/* cambiamos el color de el hover */
+.button:hover {
+  background-color: #235b9f !important;
+}
+/* PARA FACEBOOK */
+/* cambio de color de fondo gris a azul */
+.social-icons li .facebook {
+  background-color: #4a6d9d;
+}
+/* cambio de color al icono de gris a blanco */
+.social-icons li .facebook::before {
+  color: #fff !important;
+}
+
+/* PARA INSTAGRAM */
+.social-icons li .instagram {
+  background: linear-gradient(119deg, rgba(81, 91, 212) 0%, rgba(129,52,175) 25%, rgba(221,42,123) 58%, rgba(245,133,41) 100%)
+}
+.social-icons li .instagram::before {
+  color: #fff !important;
+}
+
+/* Para mostrar los circulos en los ul */
+.l-medicamentos {
+  list-style: inside;
+}
 
 
 /* Media Queries */
@@ -74,6 +129,26 @@ html {
 @media all and (max-width: 765px) {
   .slider_ver-mas {
     margin-top: 2rem;
+  }
+
+  .slider_ver-mas-primero {
+    margin-top: 50px;
+  }
+}
+
+/* Para los iconos de donde comprar */
+@media all and (max-width: 479px) {
+  .lista-iconos {
+    margin: 0;
+  }
+  .donde-comprar {
+    margin-right: 1rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .slider_ver-mas-primero {
+    margin-top: 0;
   }
 }
 
