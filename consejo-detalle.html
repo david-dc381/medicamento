@@ -181,7 +181,7 @@
 			<h3>¿Qué factores influyen en el ciclo del sueño?</h3>
 			<div class="parrafo">
 				<p>El ciclo sueño vigilia está supeditado a múltiples factores, principalmente a la exposición a la luz diurna y la oscuridad nocturna, esta última incrementa los niveles de melatonina, hormona que juega un rol clave en la regulación e inicio del sueño.</p>
-				<img src="images/fases-del-sueno.jpg" alt="">
+				<img class="img-fases" src="images/fases-del-sueno.jpg" alt="">
 				<p>Otros factores implicados son los <strong>horarios de las comidas y la actividad física diurna.</strong></p>
 				<p>Altos niveles de actividad debido al <strong>estrés, sobrecarga de trabajo o ejercicio intenso nocturno</strong> afectan de forma negativa el patrón de sueño.</p>
 				<p>El estrés implica una mayor activación psicológica y fisiológica, y se conoce que el aumento en la función del eje hipotalámico-hipofisario-adrenal (HHA) se asocia con un sueño acortado y fragmentado, con una posible reducción en la tercera etapa de sueño. A su vez un sueño acortado provoca aumentos en los niveles de marcadores relacionados con el estrés como el cortisol y, por lo tanto, los trastornos del sueño resultantes pueden llevar a una mayor activación del eje HHA, exacerbando los efectos del estrés promoviendo así un círculo vicioso entre el estrés y el insomnio.</p>
@@ -189,7 +189,7 @@
 			<blockquote>Una alteración en el patrón de sueño puede tener consecuencias directas sobre el funcionamiento emocional del día siguiente, de manera que el insomnio puede aumentar los niveles de ansiedad. Y como consecuencia la ansiedad aumenta el insomnio </blockquote>
 
 			<h3>¿Como se relacionan la COVID-19 y el insomnio?</h3>
-			<img src="images/covid.jpg" alt="">
+			<img class="img-covid" src="images/covid.jpg" alt="">
 			<div class="parrafo">
 				<p>La exposición a una situación estresante sin precedentes como representa la actual pandemia puede hacer que la mayoría de los individuos experimenten con mayor probabilidad ansiedad, depresión e interrupciones en el patrón de sueño. La preocupación por el estado de salud, la incertidumbre laboral, las dificultades económicas generadas, la dificultad de conciliar trabajo y familia, pueden provocar ansiedad, insomnio y altos niveles de estrés.</p>
 				<p>Estudios previos sobre el aislamiento social y el impacto tanto en el bienestar psicológico como en la calidad del sueño han resaltado el papel de los siguientes factores: disminución en la exposición a la luz solar, cambios en la dieta, la temperatura ambiental por el confinamiento, la reducción de la interacción social, trabajar más horas bajo circunstancias estresantes y vivir con incertidumbre e inseguridad sobre el estado de salud.</p>
@@ -297,38 +297,49 @@
 -->
 
 
+
 <!-- Add Comment
 ================================================== -->
 <div class="twelve alt columns">
 
-	<h3 class="headline">Add Comment</h3><span class="line" style="margin-bottom: 35px"></span><div class="clearfix"></div>
+	<h3 class="headline">Formulario de contacto</h3><span class="line" style="margin-bottom: 35px;"></span><div class="clearfix"></div>
 	
-	<!-- Add Comment Form -->
-	<form id="add-comment" class="add-comment">
-		<fieldset>
+	<!-- Contact Form -->
+	<section id="contact">
 
-			<div>
-				<label>Nick:</label>
-				<input type="text" value=""/>
-			</div>
-				
-			<div>
-				<label>Email: <span>*</span></label>
-				<input type="text" value=""/>
-			</div>
+		<!-- Success Message -->
+		<mark id="message"></mark>
 
-			<div>
-				<label>Comment: <span>*</span></label>
-				<textarea cols="40" rows="3"></textarea>
-			</div>
+		<!-- Form -->
+		<form method="post" action="contact.php" name="contactform" id="contactform">
 
-		</fieldset>
+			<fieldset>
 
-		<input type="button" class="add-comment-btn" value="Add Comment" />
-		<div class="clearfix"></div>
+				<div>
+					<label for="name" accesskey="U">Nombre:</label>
+						<input name="name" type="text" id="name" />
+				</div>
 
-	</form>
-	
+				<div>
+					<label for="email" accesskey="E">Correo electrónico: <span>*</span></label>
+					<input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" />
+				</div>
+
+				<div>
+					<label for="comments" accesskey="C">Mensaje: <span>*</span></label>
+					<textarea name="comments" cols="40" rows="3" id="comments" spellcheck="true"></textarea>
+				</div>
+
+			</fieldset>
+
+			<input type="submit" class="button light" id="submit" value="Enviar Mensaje" />
+			<div class="clearfix"></div>
+
+		</form>
+
+	</section>
+	<!-- Contact Form / End -->
+
 </div>
 
 </div>

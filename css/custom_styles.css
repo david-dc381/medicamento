@@ -112,6 +112,17 @@ html {
   text-align: justify !important;
 }
 
+/* imgs detalle-consejo */
+.img-fases {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.img-covid {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 /* Media Queries */
 @media all and (max-width: 1110px) {
   #slider-0 {
@@ -153,6 +164,15 @@ html {
 
   .slider_ver-mas-primero {
     margin-top: 50px;
+  }
+}
+
+
+/* Conejo-detalle, para el rsponsive de los párrafos */
+@media all and (max-width: 767px) {
+  .post-content {
+    margin: 0 !important;
+    float: none !important;
   }
 }
 
