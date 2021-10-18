@@ -99,14 +99,31 @@ html {
 }
 
 /* Para mostrar los circulos en los ul */
-.l-medicamentos {
+.l-medicamentos, .l-consejoDetalle {
   list-style: inside;
 }
 
+.l-consejoDetalle li {
+  margin-bottom: .8rem;
+}
+
+/* consejo-detalle, modificamos los párrafos */
+.parrafo p {
+  text-align: justify !important;
+}
 
 /* Media Queries */
+@media all and (max-width: 1110px) {
+  #slider-0 {
+    font-size: 2rem;
+  }
+}
+
 @media all and (max-width: 991px) {
   /* Container Medicamentos */
+  #slider-0{
+    font-size: 2rem;
+  }
   .img-medicamento {
     width: 100%;
   }
@@ -127,6 +144,9 @@ html {
 }
 
 @media all and (max-width: 765px) {
+  #slider-0 {
+    font-size: 1.7rem;
+  }
   .slider_ver-mas {
     margin-top: 2rem;
   }
@@ -138,6 +158,10 @@ html {
 
 /* Para los iconos de donde comprar */
 @media all and (max-width: 479px) {
+  #slider-0 {
+    font-size: 1rem;
+    line-height: 60% !important;
+  }
   .lista-iconos {
     margin: 0;
   }
@@ -147,9 +171,16 @@ html {
 }
 
 @media all and (max-width: 500px) {
+  #slider-0 {
+    font-size: 1.1rem;
+    line-height: 70% !important;
+  }
   .slider_ver-mas-primero {
-    margin-top: 0;
+    margin-top: 15px;
   }
 }
+
+
+
 
 /* Fin Media Queries */
