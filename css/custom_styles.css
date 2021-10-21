@@ -200,6 +200,16 @@ html {
   }
 }
 
+@media all and (max-width: 375px) {
+  #slider-0 {
+    font-size: 0.85rem;
+    line-height: 70% !important;
+  }
+  .slider_ver-mas-primero {
+    margin-top: 15px;
+  }
+}
+
 
 
 
